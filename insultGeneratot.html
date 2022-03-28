@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Генератор дразнилок</title>
+  </head>
+  <body>
+    <h1>Генератор дразнилок!</h1>
+    <script>
+      let pickRandomWord = function (words) {
+        return words[Math.floor(Math.random() * words.length)];
+      };
+      let generateRandomInsult = function () {
+        let randomBodyParts = [
+          "глаз",
+          "нос",
+          "череп",
+          "голова",
+          "ноги",
+          "уши",
+          "лицо",
+        ];
+        let randomAdjectives = [
+          "вонючая",
+          "унылая",
+          "дурацкая",
+          "сумасшедшая",
+          "дохлая",
+          "тупая",
+        ];
+        let randomWords = [
+          "муха",
+          "выдра",
+          "дубина",
+          "мартышка",
+          "крыса",
+          "собака",
+        ];
+        // Соединяем случайные строки в предложение
+        let randomString =
+          "У тебя " +
+          pickRandomWord(randomBodyParts) +
+          " словно " +
+          pickRandomWord(randomAdjectives) +
+          " " +
+          pickRandomWord(randomWords) +
+          "!!!";
+        return randomString;
+      };
+      confirm(generateRandomInsult());
+      while (confirm("Давай еще!") == true) {
+        confirm(generateRandomInsult());
+      }
+    </script>
+  </body>
+</html>
