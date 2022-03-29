@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 32px;
+  background: #3a2007;
+  padding: 0 30px;
+  font-size: 16px;
+}
+.container {
+  display: grid;
+}
+h1,
+h2 {
+  color: #ecdf2e;
+  text-align: left;
+}
+
+.page-footer {
+  background-color: #69b9d8;
+  margin: 0 auto;
+}
+.page-footer a {
+  margin-left: 30px;
+  color: #0a088f;
+  text-decoration: none;
+}
+.social-btn {
+  color: #0a088f;
+}
+.footer-copyright {
+  text-align: right;
+  margin-right: 30px;
+  color: #080208;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-small;
+}
